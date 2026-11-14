@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Degradado de la letra D -->
+    <linearGradient id="dFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#148eff" />
+      <stop offset="55%" stop-color="#0070e8" />
+      <stop offset="100%" stop-color="#004bb0" />
+    </linearGradient>
+
+    <!-- Bisel luminoso de la letra D -->
+    <linearGradient id="dStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#75c0ff" />
+      <stop offset="45%" stop-color="#0a7aff" />
+      <stop offset="100%" stop-color="#003680" />
+    </linearGradient>
+
+    <!-- Degradado metálico limpio y continuo de la letra S -->
+    <linearGradient id="sFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5f7fa" />
+      <stop offset="40%" stop-color="#cfd4dc" />
+      <stop offset="75%" stop-color="#969ca6" />
+      <stop offset="100%" stop-color="#686e78" />
+    </linearGradient>
+
+    <!-- Bisel metálico de la letra S -->
+    <linearGradient id="sStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#b5bbc4" />
+      <stop offset="100%" stop-color="#454b54" />
+    </linearGradient>
+
+    <!-- Degradado metálico sutil para las letras DEPTH STUDIO -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9aa0a6" />
+      <stop offset="100%" stop-color="#787d82" />
+    </linearGradient>
+
+    <!-- Sombra proyectada suave -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#000000" flood-opacity="0.55" />
+    </filter>
+  </defs>
+
+  <!-- 1. Isotipo DS (Escalado y centrado exactamente como en la imagen) -->
+  <g filter="url(#dropShadow)" transform="translate(-52.1, -93.8) scale(1.2)">
+    <!-- Letra D -->
+    <path fill="url(#dFill)" stroke="url(#dStroke)" stroke-width="2" fill-rule="evenodd" d="
+      M 163,134 
+      H 203 
+      C 231,134 246,151 246,182 
+      V 330 
+      C 246,361 231,378 203,378 
+      H 163 
+      Z 
+      M 187,158 
+      H 201 
+      C 215,158 222,167 222,184 
+      V 328 
+      C 222,345 215,354 201,354 
+      H 187 
+      Z" />
+
+    <!-- Letra S -->
+    <path fill="url(#sFill)" stroke="url(#sStroke)" stroke-width="2" d="
+      M 351,182
+      V 221
+      H 327
+      V 182
+      C 327,165 320,157 309,157
+      C 298,157 291,165 291,182
+      V 208
+      C 291,223 295,233 309,246
+      L 333,269
+      C 347,282 351,294 351,314
+      V 332
+      C 351,361 335,380 309,380
+      C 283,380 267,361 267,332
+      V 290
+      H 291
+      V 332
+      C 291,349 298,356 309,356
+      C 320,356 327,349 327,332
+      V 314
+      C 327,300 323,291 310,279
+      L 286,256
+      C 272,243 267,230 267,208
+      V 182
+      C 267,151 283,133 309,133
+      C 335,133 351,151 351,182
+      Z" />
+  </g>
+
+  <!-- 2. Logotipo "DEPTH STUDIO" (100% vectorizado en curvas, sin fuentes externas) -->
+  <g fill="url(#textGrad)" fill-rule="evenodd">
+    <!-- D -->
+    <path d="M 74,409 H 85 C 92.5,409 97,413.5 97,421 V 430 C 97,437.5 92.5,442 85,442 H 74 Z M 79.5,414 V 437 H 84.5 C 89,437 91.5,434.5 91.5,429.5 V 421.5 C 91.5,416.5 89,414 84.5,414 Z" />
+    
+    <!-- E -->
+    <path d="M 110,409 H 130 V 414 H 115.5 V 423 H 128 V 428 H 115.5 V 437 H 130.5 V 442 H 110 Z" />
+    
+    <!-- P -->
+    <path d="M 143.5,409 H 155.5 C 162,409 166,413 166,419.5 C 166,426 162,430 155.5,430 H 149 V 442 H 143.5 Z M 149,414 V 425 H 155 C 158.5,425 160.5,423 160.5,419.5 C 160.5,416 158.5,414 155,414 Z" />
+    
+    <!-- T -->
+    <path d="M 176,409 H 200 V 414 H 190.75 V 442 H 185.25 V 414 H 176 Z" />
+    
+    <!-- H -->
+    <path d="M 210,409 H 215.5 V 423 H 228.5 V 409 H 234 V 442 H 228.5 V 428 H 215.5 V 442 H 210 Z" />
+    
+    <!-- S -->
+    <path d="M 271.5,432.5 C 272,436 275,437.8 279.5,437.8 C 283.5,437.8 286,436 286,433.2 C 286,430.5 284,429.2 278.5,427.8 C 271.5,426 267,423.5 267,418 C 267,412.5 272,408.5 279,408.5 C 286,408.5 290.8,412.2 291.2,418 H 285.5 C 285,415 282.5,413.2 278.8,413.2 C 275,413.2 272.5,415 272.5,417.5 C 272.5,420 274.5,421.2 280,422.5 C 287.2,424.2 291.5,426.8 291.5,432.8 C 291.5,438.8 286.5,442.5 279.2,442.5 C 271.5,442.5 266.5,438.5 266,432.5 Z" />
+    
+    <!-- T -->
+    <path d="M 300,409 H 324 V 414 H 314.75 V 442 H 309.25 V 414 H 300 Z" />
+    
+    <!-- U -->
+    <path d="M 334.5,409 H 340 V 430 C 340,434.8 342.5,437.5 346.8,437.5 C 351.1,437.5 353.5,434.8 353.5,430 V 409 H 359 V 430.2 C 359,438 354.2,442.5 346.8,442.5 C 339.4,442.5 334.5,438 334.5,430.2 Z" />
+    
+    <!-- D -->
+    <path d="M 372,409 H 383 C 390.5,409 395,413.5 395,421 V 430 C 395,437.5 390.5,442 383,442 H 372 Z M 377.5,414 V 437 H 382.5 C 387,437 389.5,434.5 389.5,429.5 V 421.5 C 389.5,416.5 387,414 382.5,414 Z" />
+    
+    <!-- I -->
+    <path d="M 408,409 H 413.5 V 442 H 408 Z" />
+    
+    <!-- O -->
+    <path d="M 438,408.5 C 446,408.5 451,414 451,422 V 429 C 451,437 446,442.5 438,442.5 C 430,442.5 425,437 425,429 V 422 C 425,414 430,408.5 438,408.5 Z M 438,413.5 C 433.2,413.5 430.5,416.8 430.5,422 V 429 C 430.5,434.2 433.2,437.5 438,437.5 C 442.8,437.5 445.5,434.2 445.5,429 V 422 C 445.5,416.8 442.8,413.5 438,413.5 Z" />
+  </g>
+</svg>
